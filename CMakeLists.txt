@@ -1,0 +1,13 @@
+cmake_minimum_required (VERSION 2.8)
+project (IneosTest)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_PREFIX_PATH "${CMAKE_BINARY_DIR}" "${CMAKE_PREFIX_PATH}")
+set(CMAKE_INSTALL_DIRECTORY "${CMAKE_SOURCE_DIR}/install/")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_INSTALL_DIRECTORY}/lib")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_INSTALL_DIRECTORY}/bin")
+set(CMAKE_INCLUDE_OUTPUT_DIRECTORY "${CMAKE_INSTALL_DIRECTORY}/include")
+
+enable_testing()
+add_subdirectory(src)
+add_subdirectory(test)
