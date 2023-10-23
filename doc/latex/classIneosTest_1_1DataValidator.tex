@@ -1,0 +1,59 @@
+\hypertarget{classIneosTest_1_1DataValidator}{\section{Ineos\-Test\-:\-:Data\-Validator Class Reference}
+\label{classIneosTest_1_1DataValidator}\index{Ineos\-Test\-::\-Data\-Validator@{Ineos\-Test\-::\-Data\-Validator}}
+}
+
+
+Data validator class.  
+
+
+
+
+{\ttfamily \#include $<$Data\-Validator.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIneosTest_1_1DataValidator_aadbf87f53207d93e7005a9521ff56e19}{static bool \hyperlink{classIneosTest_1_1DataValidator_aadbf87f53207d93e7005a9521ff56e19}{check\-\_\-range} (const double data\-Value, const double low\-Limit=std\-::numeric\-\_\-limits$<$ double $>$\-::min(), const double up\-Limit=std\-::numeric\-\_\-limits$<$ double $>$\-::max())}\label{classIneosTest_1_1DataValidator_aadbf87f53207d93e7005a9521ff56e19}
+
+\begin{DoxyCompactList}\small\item\em Check if data value is within range of values. \end{DoxyCompactList}\item 
+\hypertarget{classIneosTest_1_1DataValidator_ac0e1c6410ab65ef6b6e73f08fe205f67}{static bool \hyperlink{classIneosTest_1_1DataValidator_ac0e1c6410ab65ef6b6e73f08fe205f67}{is\-\_\-inf} (const double data\-Value)}\label{classIneosTest_1_1DataValidator_ac0e1c6410ab65ef6b6e73f08fe205f67}
+
+\begin{DoxyCompactList}\small\item\em Check if data value is inf (infty) \end{DoxyCompactList}\item 
+\hypertarget{classIneosTest_1_1DataValidator_af878f521fd9b72d1bc788c3adadb8746}{static bool \hyperlink{classIneosTest_1_1DataValidator_af878f521fd9b72d1bc788c3adadb8746}{is\-\_\-nan} (const double data\-Value)}\label{classIneosTest_1_1DataValidator_af878f521fd9b72d1bc788c3adadb8746}
+
+\begin{DoxyCompactList}\small\item\em Check if data value is nan (not a number) \end{DoxyCompactList}\item 
+\hypertarget{classIneosTest_1_1DataValidator_a21f41ffc3137c3a84c2890d76cff0cac}{static bool \hyperlink{classIneosTest_1_1DataValidator_a21f41ffc3137c3a84c2890d76cff0cac}{validate\-\_\-data\-\_\-array} (const std\-::vector$<$ double $>$ \&data, const bool ignore\-Invalid\-Data=false, const double low\-Limit=std\-::numeric\-\_\-limits$<$ double $>$\-::min(), const double up\-Limit=std\-::numeric\-\_\-limits$<$ double $>$\-::max())}\label{classIneosTest_1_1DataValidator_a21f41ffc3137c3a84c2890d76cff0cac}
+
+\begin{DoxyCompactList}\small\item\em Check if all data values in data array are within given range of values and not inf/nan. \end{DoxyCompactList}\item 
+static bool \hyperlink{classIneosTest_1_1DataValidator_a6da5b98791cbdb78057479dc97edcf3b}{validate\-\_\-data\-\_\-value} (const double data\-Value, const bool ignore\-Invalid\-Data)
+\begin{DoxyCompactList}\small\item\em Validate double data type value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data validator class. 
+
+Class is equipped with methods that validate data, these methods mimic mathematical analysis principle in terms of checking for data domain and range. Class also has methods that check for nans and infs. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]This is currently a class of static-\/only methods and does not need to be class (it could be a library of global utility functions), however the aim of this implementation is the possiblity to extend this class further and allow it to test more complex objects. 
+
+Consider templating some methods in order to support different data types etc. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classIneosTest_1_1DataValidator_a6da5b98791cbdb78057479dc97edcf3b}{\index{Ineos\-Test\-::\-Data\-Validator@{Ineos\-Test\-::\-Data\-Validator}!validate\-\_\-data\-\_\-value@{validate\-\_\-data\-\_\-value}}
+\index{validate\-\_\-data\-\_\-value@{validate\-\_\-data\-\_\-value}!IneosTest::DataValidator@{Ineos\-Test\-::\-Data\-Validator}}
+\subsubsection[{validate\-\_\-data\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}bool Ineos\-Test\-::\-Data\-Validator\-::validate\-\_\-data\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{const double}]{data\-Value, }
+\item[{const bool}]{ignore\-Invalid\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classIneosTest_1_1DataValidator_a6da5b98791cbdb78057479dc97edcf3b}
+
+
+Validate double data type value. 
+
+Checks if data\-Value is not under/overflowing and is not nan/inf 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/home01/elade/\-Codes/\-Ineos\-Test/src/Data\-Validator.\-h\item 
+/home/home01/elade/\-Codes/\-Ineos\-Test/src/Data\-Validator.\-cpp\end{DoxyCompactItemize}

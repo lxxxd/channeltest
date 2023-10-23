@@ -1,0 +1,1 @@
+cmd='/apps/infrastructure/cmake/3.15.1/1/default/bin/cmake;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIneosCore.a  CMakeFiles/IneosCore.dir/ChannelData.cpp.o CMakeFiles/IneosCore.dir/DataValidator.cpp.o CMakeFiles/IneosCore.dir/ProcessingSystem.cpp.o
+/usr/bin/ranlib libIneosCore.a

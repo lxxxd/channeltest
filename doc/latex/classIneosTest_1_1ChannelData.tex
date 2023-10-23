@@ -1,0 +1,145 @@
+\hypertarget{classIneosTest_1_1ChannelData}{\section{Ineos\-Test\-:\-:Channel\-Data Class Reference}
+\label{classIneosTest_1_1ChannelData}\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}}
+}
+
+
+Channel Data class.  
+
+
+
+
+{\ttfamily \#include $<$Channel\-Data.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIneosTest_1_1ChannelData_a78cbf79f506c2da567f22b37d22e6b26}{Channel\-Data} (const std\-::string \&data\-Filename, const std\-::string \&parameter\-Filename)
+\begin{DoxyCompactList}\small\item\em Constructror that parses files for data. \end{DoxyCompactList}\item 
+\hyperlink{classIneosTest_1_1ChannelData_a896dba77cb37e2208a67610bb2a828ba}{Channel\-Data} (const std\-::vector$<$ double $>$ \&data\-Array, const double m, const double c)
+\begin{DoxyCompactList}\small\item\em Constructror that processes data array. \end{DoxyCompactList}\item 
+double \hyperlink{classIneosTest_1_1ChannelData_a1345a162209296f0e9c299161dd0299c}{get\-\_\-c} () const 
+\begin{DoxyCompactList}\small\item\em Get c parameter. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ \hyperlink{classIneosTest_1_1ChannelData_a43434563ddf5e8b460bb1ffaa1716167}{get\-\_\-data} () const 
+\begin{DoxyCompactList}\small\item\em Get channel data. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ \hyperlink{classIneosTest_1_1ChannelData_a2560e50ec6f65570f25a23137e15bdb1}{get\-\_\-data\-\_\-in\-\_\-range} (const double low\-Limit, const double up\-Limit) const 
+\begin{DoxyCompactList}\small\item\em Get data\-Values in certain range. \end{DoxyCompactList}\item 
+double \hyperlink{classIneosTest_1_1ChannelData_a35e223f5eb751477877fddc76adc7686}{get\-\_\-m} () const 
+\begin{DoxyCompactList}\small\item\em Get m parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIneosTest_1_1ChannelData_a94edea629773dec08075f1ee2642e155}{double {\bfseries c\-Parameter\-\_\-}}\label{classIneosTest_1_1ChannelData_a94edea629773dec08075f1ee2642e155}
+
+\item 
+\hypertarget{classIneosTest_1_1ChannelData_aa2d217b385f905016c8085a5e148a9fa}{std\-::vector$<$ double $>$ {\bfseries data\-\_\-}}\label{classIneosTest_1_1ChannelData_aa2d217b385f905016c8085a5e148a9fa}
+
+\item 
+\hypertarget{classIneosTest_1_1ChannelData_a01d9814105824da3dad9ee38ddc121d7}{double {\bfseries m\-Parameter\-\_\-}}\label{classIneosTest_1_1ChannelData_a01d9814105824da3dad9ee38ddc121d7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Channel Data class. 
+
+Class that loads channel data either from a file or array of vaalues. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Allow class to ignore invalid data? \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIneosTest_1_1ChannelData_a78cbf79f506c2da567f22b37d22e6b26}{\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}!Channel\-Data@{Channel\-Data}}
+\index{Channel\-Data@{Channel\-Data}!IneosTest::ChannelData@{Ineos\-Test\-::\-Channel\-Data}}
+\subsubsection[{Channel\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Ineos\-Test\-::\-Channel\-Data\-::\-Channel\-Data (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{data\-Filename, }
+\item[{const std\-::string \&}]{parameter\-Filename}
+\end{DoxyParamCaption}
+)}}\label{classIneosTest_1_1ChannelData_a78cbf79f506c2da567f22b37d22e6b26}
+
+
+Constructror that parses files for data. 
+
+Constructor
+
+Constructor \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]The code below is repetitive, create generic csv data reading functions \end{DoxyRefDesc}
+\hypertarget{classIneosTest_1_1ChannelData_a896dba77cb37e2208a67610bb2a828ba}{\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}!Channel\-Data@{Channel\-Data}}
+\index{Channel\-Data@{Channel\-Data}!IneosTest::ChannelData@{Ineos\-Test\-::\-Channel\-Data}}
+\subsubsection[{Channel\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Ineos\-Test\-::\-Channel\-Data\-::\-Channel\-Data (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ double $>$ \&}]{data\-Array, }
+\item[{const double}]{m, }
+\item[{const double}]{c}
+\end{DoxyParamCaption}
+)}}\label{classIneosTest_1_1ChannelData_a896dba77cb37e2208a67610bb2a828ba}
+
+
+Constructror that processes data array. 
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classIneosTest_1_1ChannelData_a1345a162209296f0e9c299161dd0299c}{\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}!get\-\_\-c@{get\-\_\-c}}
+\index{get\-\_\-c@{get\-\_\-c}!IneosTest::ChannelData@{Ineos\-Test\-::\-Channel\-Data}}
+\subsubsection[{get\-\_\-c}]{\setlength{\rightskip}{0pt plus 5cm}double Ineos\-Test\-::\-Channel\-Data\-::get\-\_\-c (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classIneosTest_1_1ChannelData_a1345a162209296f0e9c299161dd0299c}
+
+
+Get c parameter. 
+
+\begin{DoxyReturn}{Returns}
+c parameter 
+\end{DoxyReturn}
+\hypertarget{classIneosTest_1_1ChannelData_a43434563ddf5e8b460bb1ffaa1716167}{\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}!get\-\_\-data@{get\-\_\-data}}
+\index{get\-\_\-data@{get\-\_\-data}!IneosTest::ChannelData@{Ineos\-Test\-::\-Channel\-Data}}
+\subsubsection[{get\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ Ineos\-Test\-::\-Channel\-Data\-::get\-\_\-data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classIneosTest_1_1ChannelData_a43434563ddf5e8b460bb1ffaa1716167}
+
+
+Get channel data. 
+
+\begin{DoxyReturn}{Returns}
+vector of data points 
+\end{DoxyReturn}
+\hypertarget{classIneosTest_1_1ChannelData_a2560e50ec6f65570f25a23137e15bdb1}{\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}!get\-\_\-data\-\_\-in\-\_\-range@{get\-\_\-data\-\_\-in\-\_\-range}}
+\index{get\-\_\-data\-\_\-in\-\_\-range@{get\-\_\-data\-\_\-in\-\_\-range}!IneosTest::ChannelData@{Ineos\-Test\-::\-Channel\-Data}}
+\subsubsection[{get\-\_\-data\-\_\-in\-\_\-range}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ Ineos\-Test\-::\-Channel\-Data\-::get\-\_\-data\-\_\-in\-\_\-range (
+\begin{DoxyParamCaption}
+\item[{const double}]{low\-Limit = {\ttfamily std\-:\-:numeric\-\_\-limits$<$double$>$\-:\-:min()}, }
+\item[{const double}]{up\-Limit = {\ttfamily std\-:\-:numeric\-\_\-limits$<$double$>$\-:\-:max()}}
+\end{DoxyParamCaption}
+) const}}\label{classIneosTest_1_1ChannelData_a2560e50ec6f65570f25a23137e15bdb1}
+
+
+Get data\-Values in certain range. 
+
+Get valid data\-Values.
+
+The function filters data in specified range of values
+
+The function ignores invalid data points and it can be used to filter data in specified range of values \hypertarget{classIneosTest_1_1ChannelData_a35e223f5eb751477877fddc76adc7686}{\index{Ineos\-Test\-::\-Channel\-Data@{Ineos\-Test\-::\-Channel\-Data}!get\-\_\-m@{get\-\_\-m}}
+\index{get\-\_\-m@{get\-\_\-m}!IneosTest::ChannelData@{Ineos\-Test\-::\-Channel\-Data}}
+\subsubsection[{get\-\_\-m}]{\setlength{\rightskip}{0pt plus 5cm}double Ineos\-Test\-::\-Channel\-Data\-::get\-\_\-m (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classIneosTest_1_1ChannelData_a35e223f5eb751477877fddc76adc7686}
+
+
+Get m parameter. 
+
+\begin{DoxyReturn}{Returns}
+m parameter 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/home01/elade/\-Codes/\-Ineos\-Test/src/Channel\-Data.\-h\item 
+/home/home01/elade/\-Codes/\-Ineos\-Test/src/Channel\-Data.\-cpp\end{DoxyCompactItemize}
