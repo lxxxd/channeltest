@@ -5,6 +5,7 @@ To build:
 Run cmake_installer_script.in
 
 ~~~
+chmod +x cmake_installer_script.in
 ./cmake_installer_script.in
 ~~~~
 
